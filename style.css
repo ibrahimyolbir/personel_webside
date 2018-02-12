@@ -20,6 +20,9 @@ header{
     width: 100%;
     color: azure;
 }
+.home_link:hover{
+    text-decoration:none;
+}
 .main_header_text {
     font-size:30px;
     text-decoration:none;

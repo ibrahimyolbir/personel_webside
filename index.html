@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="app.js"></script>
     <title>Min Hemsida</title>
 </head>
 
@@ -30,7 +31,7 @@
         <!-- Header -->
         <header>
             <div class="main_header_text main_header_left ">
-                <a href="#home">Home</a>
+                <a class="home_link nav_href" href="#home">Home</a>
             </div>
             <div class="main_header_text"> WELCOME TO MY PAGE</div>
         </header>
@@ -42,19 +43,19 @@
                     <div>
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link nav_href" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
+                                <a class="nav-link nav_href" href="#">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">About Me</a>
+                                <a class="nav-link nav_href" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav_href" id="contact_link" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contakt">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" class="button5">More</a>
+                                <a class="nav-link nav_href" href="#" >More</a>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +63,7 @@
             </section>
         </main>
         <!-- The About Section -->
-        <section class="section_positioning" style="background-color:rgb(92, 192, 159)">
+        <section id="about" class="section_positioning" style="background-color:rgb(92, 192, 159)">
                 <img src="ibo2.jpg" alt="mypicture" class="rounded-circle" style="float:right;width:200px;height:220px;" ;>
                 <h2>ANSTÄLLNINGAR</h2>
                 <p>Jobbar som kock</p>
@@ -89,7 +90,7 @@
         <main id="contact">
             <section>
                 <div>
-                    <div class="contact" id="contakt">
+                    <div class="contact" id="contact">
                         <h2>CONTACT</h2>
                         <p>
                             <i> Drop a note!</i>
