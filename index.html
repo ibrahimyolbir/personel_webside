@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,99 +24,101 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Min Hemsida</title>
 </head>
-<body >
-    <main id="home">
+
+<body>
+    <main id="home" class=".container">
         <!-- Header -->
-<header >
-    <div>
-            <a href="#home" style="float:left;font-size:30px;text-decoration:none;">Home</a>
-    </div>
-    <p style="float:left;" ></p> 
-    <h1> WELCOME TO MY PAGE</h1>
-</header>
-  <main class="content">
-      <section>
-            <h1 class="cl1">UTVECKLARE</h1>
-            <h1 class="cl2">Ibrahim Yolbir</h1>
-            <div class="button">
-              <div>
-                <a href="#" class="button1">Home</a>
-                <a href="#" class="button2">Portfolio</a>
-                <a href="#about" class="button3">About Me</a>
-                <a href="#contakt" class="button4">Contact</a>
-                <div class="dropdown">
-                        <a class="button5">More</a>
-                        <div class="dropdown-content">
-                          <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
-                          <a href="https://github.com/" target="_blank">GitHub</a>
-                          <a href="https://codepen.io/" target="_blank">CodePen</a>
-                        </div>
-                      </div>
-              </div>
+        <header>
+            <div class="main_header_text main_header_left ">
+                <a href="#home">Home</a>
             </div>
-      </section>
-  </main>
-   <!-- The About Section -->
-   <main class="jobb" style="background-color:rgb(92, 192, 159)">
-       <section>
-            <article>
-                    <img src="ibo2.jpg" alt="mypicture" style="float:right;width:200px;height:220px; border-radius: 50%;";>
-                    <h2>ANSTÄLLNINGAR</h2>
-                    <p>Jobbar som kock</p>
-                    <p>Har jobbat länge sedan som <span>Software Training & Support Expert</span></p>
-                </article>
-       </section>
-   </main>
-  <main class="edu" style="background-color:rgb(192, 92, 97)">
-      <section>
-          <article>
-                <img src="ibo.jpg" alt="mypicture" style="float:left;width:200px;height:auto; border-radius: 50%;";>
-                <h2>UTBILDNINGAR</h2>      
+            <div class="main_header_text"> WELCOME TO MY PAGE</div>
+        </header>
+        <main class="content .container">
+            <section>
+                <div class="cl1">UTVECKLARE</div>
+                <div class="cl2">Ibrahim Yolbir</div>
+                <div class="button">
+                    <div>
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contakt">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" class="button5">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- The About Section -->
+        <section class="section_positioning" style="background-color:rgb(92, 192, 159)">
+                <img src="ibo2.jpg" alt="mypicture" class="rounded-circle" style="float:right;width:200px;height:220px;" ;>
+                <h2>ANSTÄLLNINGAR</h2>
+                <p>Jobbar som kock</p>
+                <p>Har jobbat länge sedan som
+                    <strong>Software Training & Support Expert</strong>
+                </p>
+        </section>
+        <section class="section_positioning" style="background-color:rgb(192, 92, 97)">
+                <img src="ibo.jpg" alt="mypicture" style="float:left;width:200px;height:auto; border-radius: 50%;" ;>
+                <h2>UTBILDNINGAR</h2>
                 <p>Data program / IT-Tekniker.</p>
                 <p>aa</p>
-          </article>
-           
-      </section>
-  </main>
-<main class="int" style="background-color:rgb(88, 190, 190)">
-    <section>
-            <article>
-                    <img src="ibo3.jpg" alt="mypicture" style="float:right;width:200px;height:220px; border-radius: 50%;";>   
-                    <h2>INTRESSEN</h2>      
-                    <ulol>
-                        <li>Spela PlayStation</li>
-                        <li>Att cykla</li>
-                        <li>Serier</li>
+        </section>
+        <section class="section_positioning" style="background-color:rgb(88, 190, 190)">
+                <img src="ibo3.jpg" alt="mypicture" style="float:right;width:200px;height:220px; border-radius: 50%;" ;>
+                <h2>INTRESSEN</h2>
+                <ulol>
+                    <li>Spela PlayStation</li>
+                    <li>Att cykla</li>
+                    <li>Serier</li>
                     </ul>
-    </section>
-</main>
-  <!-- The Contact Section -->
-<main id="contact">
-    <section>
-        <div>
-            <div class="contact" id="contakt">
-                    <h2>CONTACT</h2>
-                    <p><i> Drop a note!</i></p>
-            </div>
-            <div class="contact1">
-                    <i class="fa fa-map-marker"></i> Helsingborg, SW<br>
-                    <i class="fa fa-phone"></i> Phone: +46 0721559424<br>
-                    <i class="fa fa-envelope"></i> Email: ibrahim.yolbir@hotmail.com<br>
-            </div>
-        </div>
-        <!-- Google Map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8921.73485431919!2d12.722561100000002!3d56.011161099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1675b30f8e62e035!2sNorreheds+work+center!5e0!3m2!1str!2sse!4v1518430423616" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
-</main>
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium"> Copy 2018 Ibrahim Yolbir</p>
-  </footer>
-  
+        </section>
+        <!-- The Contact Section -->
+        <main id="contact">
+            <section>
+                <div>
+                    <div class="contact" id="contakt">
+                        <h2>CONTACT</h2>
+                        <p>
+                            <i> Drop a note!</i>
+                        </p>
+                    </div>
+                    <div class="contact1">
+                        <i class="fa fa-map-marker"></i> Helsingborg, SW
+                        <br>
+                        <i class="fa fa-phone"></i> Phone: +46 0721559424
+                        <br>
+                        <i class="fa fa-envelope"></i> Email: ibrahim.yolbir@hotmail.com
+                        <br>
+                    </div>
+                </div>
+                <!-- Google Map -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8921.73485431919!2d12.722561100000002!3d56.011161099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1675b30f8e62e035!2sNorreheds+work+center!5e0!3m2!1str!2sse!4v1518430423616"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+        </main>
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            <p class="w3-medium"> Copy 2018 Ibrahim Yolbir</p>
+        </footer>
+
 </body>
+
 </html>
