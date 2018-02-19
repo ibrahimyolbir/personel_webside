@@ -19,6 +19,7 @@ header{
     clear: both;
     width: 100%;
     color: azure;
+    background:image url("ibo.jpg")
 }
 .home_link:hover{
     text-decoration:none;
@@ -115,7 +116,7 @@ margin-top: 150px;
 .contact {
     font-family: "Raleway", Arial, sans-serif;
     margin-top: 250px;
-    margin-bottom: 20px;
+    margin-bottom: 500px;
     text-align: center;
     letter-spacing: 6px;
     color: #666360;

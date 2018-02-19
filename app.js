@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function (){
     $('.nav_href').click(function(){
         $('html, body').animate({
