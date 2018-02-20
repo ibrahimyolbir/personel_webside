@@ -31,88 +31,183 @@
         <!-- Header -->
         <header>
             <div class="main_header_text main_header_left ">
-                <a class="home_link nav_href" href="#home">Home</a>
+                <div class="main_name_text">Ibrahim Yolbir</div>
+                <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#myBtnContainer">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav_href" id="contact_link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="">More</a>
+                        </li>
+                    </ul>
             </div>
-            <div class="main_header_text"> WELCOME TO MY PAGE</div>
         </header>
-        <main class="content .container">
-            <section>
-                <div class="cl1">UTVECKLARE</div>
-                <div class="cl2">Ibrahim Yolbir</div>
-                <div class="button">
-                    <div>
-                        <ul class="nav justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link nav_href" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_href" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_href" href="#about">About Me</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link nav_href" id="contact_link" href="#contact">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav_href" href="#" >More</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-        </main>
+        
+        <section class="content .container">
+             <div class="cl1"></div>
+            <div class="cl2"></div>
+            <div class="button">
+              <!--  <div>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#myBtnContainer">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link nav_href" id="contact_link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_href" href="">More</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div> 
+        </section> 
+        <div id="yukari">
+                <a href="javascript:;"><img alt="Yukarı Çık" title="Yukarı Çık" id="yukari_boyut" src="http://hakantasan.com/assets/images/yukari.ico"></a>
+            </div>
         <!-- The About Section -->
         <section id="about" class="section_positioning" style="background-color:rgb(92, 192, 159)">
-                <img src="ibo2.jpg" alt="mypicture" class="rounded-circle" style="float:right;width:200px;height:220px;" ;>
-                <h2>ANSTÄLLNINGAR</h2>
-                <p>Jobbar som kock</p>
-                <p>Har jobbat länge sedan som
-                    <strong>Software Training & Support Expert</strong>
-                </p>
+            <img src="images/ibo2.jpg" alt="mypicture" class="rounded-circle" style="float:right;width:200px;height:220px;" ;>
+            <h2>ANSTÄLLNINGAR</h2>
+            <p>Jobbar som kock</p>
+            <p>Har jobbat länge sedan som
+                <strong>Software Training & Support Expert</strong>
+            </p>
         </section>
         <section class="section_positioning" style="background-color:rgb(192, 92, 97)">
-                <img src="ibo.jpg" alt="mypicture" style="float:left;width:200px;height:auto; border-radius: 50%;" ;>
-                <h2>UTBILDNINGAR</h2>
-                <p>Data program / IT-Tekniker.</p>
-                <p>aa</p>
+            <img src="images/ibo.jpg" alt="mypicture" style="float:left;width:200px;height:auto; border-radius: 50%;" ;>
+            <h2>UTBILDNINGAR</h2>
+            <p>Data program / IT-Tekniker.</p>
+            <p>aa</p>
         </section>
         <section class="section_positioning" style="background-color:rgb(88, 190, 190)">
-                <img src="ibo3.jpg" alt="mypicture" style="float:right;width:200px;height:220px; border-radius: 50%;" ;>
-                <h2>INTRESSEN</h2>
-                <ulol>
-                    <li>Spela PlayStation</li>
-                    <li>Att cykla</li>
-                    <li>Serier</li>
-                    </ul>
+            <img src="images/ibo3.jpg" alt="mypicture" style="float:right;width:200px;height:220px; border-radius: 50%;" ;>
+            <h2>INTRESSEN</h2>
+            <ulol>
+                <li>Spela PlayStation</li>
+                <li>Att cykla</li>
+                <li>Serier</li>
+                </ul>
         </section>
+        <!-- Portfolio Gallery Grid -->
+        <section class="portfolio">
+            <div>
+                <div class="porthead">MY PORTFOLIO</div>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+                    <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+                    <button class="btn" onclick="filterSelection('people')"> People</button>
+                </div>
+                <div class="row2">
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/mountains.jpg" alt="Mountains" style="width:100%">
+                            <h4>Mountains</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/lights.jpg" alt="Lights" style="width:100%">
+                            <h4>Lights</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/nature.jpg" alt="Nature" style="width:100%">
+                            <h4>Forest</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/cars1.jpg" alt="Car" style="width:100%">
+                            <h4>Retro</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/cars2.jpg" alt="Car" style="width:100%">
+                            <h4>Fast</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/cars3.jpg" alt="Car" style="width:100%">
+                            <h4>Classic</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/people1.jpg" alt="Car" style="width:100%">
+                            <h4>Girl</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/people2.jpg" alt="Car" style="width:100%">
+                            <h4>Man</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/people3.jpg" alt="Car" style="width:100%">
+                            <h4>Woman</h4>
+                            <p>Lorem ipsum dolor..</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
         <!-- The Contact Section -->
-        <main id="contact">
-            <section>
+        <section  class="contact">
+            <div id="contact">
                 <div>
-                    <div class="contact" id="contact">
-                        <h2>CONTACT</h2>
-                        <p>
-                            <i> Drop a note!</i>
-                        </p>
-                    </div>
-                    <div class="contact1">
-                        <i class="fa fa-map-marker"></i> Helsingborg, SW
-                        <br>
-                        <i class="fa fa-phone"></i> Phone: +46 0721559424
-                        <br>
-                        <i class="fa fa-envelope"></i> Email: ibrahim.yolbir@hotmail.com
-                        <br>
-                    </div>
+                    <h2>CONTACT</h2>
+                    <p>
+                        <i> Drop a note!</i>
+                    </p>
                 </div>
-                <!-- Google Map -->
-                <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8921.73485431919!2d12.722561100000002!3d56.011161099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1675b30f8e62e035!2sNorreheds+work+center!5e0!3m2!1str!2sse!4v1518430423616"
-                        width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-                
+                <div class="contact1">
+                    <i class="fa fa-map-marker"></i> Helsingborg, SW
+                    <br>
+                    <i class="fa fa-phone"></i> Phone: +46 0721559424
+                    <br>
+                    <i class="fa fa-envelope"></i> Email: ibrahim.yolbir@hotmail.com
+                    <br>
                 </div>
-                </section>
-        </main>
+            </div>
+            <!-- Google Map -->
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8921.73485431919!2d12.722561100000002!3d56.011161099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1675b30f8e62e035!2sNorreheds+work+center!5e0!3m2!1str!2sse!4v1518430423616"
+                    width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+        </section>
         <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
             <i class="fa fa-facebook-official w3-hover-opacity"></i>
             <i class="fa fa-instagram w3-hover-opacity"></i>
